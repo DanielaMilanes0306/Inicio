@@ -69,7 +69,7 @@ public class gitSaberBotHome extends JFrame {
 
     private void mostrarInformacionUniversidad(Universidad universidad) {
         JOptionPane.showMessageDialog(this, "Bienvenido a " + universidad.getNombre() + "\n" + universidad.getDescripcion());
-        if (!universidadesSeleccionadas.contains(universidad.getNombre())) {
+        if (universidadesSeleccionadas.contains(universidad.getNombre())) {
             universidadesSeleccionadas.add(universidad.getNombre());
             mostrarUniversidadesSeleccionadas();
         }
